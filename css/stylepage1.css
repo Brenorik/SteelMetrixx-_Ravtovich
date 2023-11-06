@@ -1,0 +1,103 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrapper{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center{
+    max-width: 1316px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*Section 1*/
+
+.container-first header{
+    background: #fff;
+    font-family: 'Gilroy';
+    margin-top: 14px;
+    margin-bottom: 14px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 610px 1fr 197px;
+
+
+}
+.container-first header .menu ul{
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.container-first header .menu ul li a,
+.container-first header .tel{
+    color: #464646;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    text-decoration: none;
+}
+
+.container-first header .menu ul li a img{
+    margin-left: 8px;
+    vertical-align: bottom;
+}
+
+.container-first header .tel{
+    color: #EB6329;
+    display: flex;
+    justify-content: flex-end;
+}
+
