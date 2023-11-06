@@ -71,15 +71,10 @@ table {
     align-items: center;
     display: grid;
     grid-template-columns: 610px 1fr 197px;
-
-
 }
 .container-first header .menu ul{
     display: flex;
     justify-content: space-between;
-
-
-
 }
 
 .container-first header .menu ul li a,
@@ -156,7 +151,6 @@ table {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
-
 }
 
 .container-first .head-botton .head-botton-card p{
@@ -166,7 +160,6 @@ table {
     line-height: 100%; /* 18px */
     padding-top: 17px;
     padding-bottom: 17px;
-
 }
 
 .container-first .head-botton .head-botton-card img{
@@ -177,4 +170,89 @@ table {
     background: #464646;
 }
 
+    /*Section 2*/
 
+.container-solutions{
+    background: #FFF;
+}
+
+.container-solutions .solutions-arrow{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container-solutions .solutions-cart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 150px;
+}
+
+.container-solutions .solutions-cart .cart-info{
+    background: #464646;
+}
+
+.container-solutions .solutions-cart .cart-info img{
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.container-solutions .solutions-cart .cart-info h4{
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 110%; /* 25.3px */
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 259px;
+    margin-left: 20px;
+}
+
+.container-solutions .solutions-cart .cart-info .editing-one{
+    margin-bottom: 35px;
+}
+
+.container-solutions .solutions-cart .cart-info .editing-two{
+    margin-bottom: 10px;
+}
+
+.container-solutions .solutions-cart .cart-info p{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    margin-left: 20px;
+    margin-bottom: 25px;
+    width: 225px;
+}
+
+.container-solutions .solutions-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin-bottom: 150px;
+}
+
+.container-solutions .solutions-bottom .solutions-info h2{
+    color: #EB6329;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 100%; /* 75px */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.container-solutions .solutions-bottom .solutions-info p{
+    color: #464646;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%; /* 33.6px */
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: #EB6329;
+    padding-left: 12px;
+    height: 102px;
+
+}
