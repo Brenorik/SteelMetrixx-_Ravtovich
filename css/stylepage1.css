@@ -256,3 +256,31 @@ table {
     height: 102px;
 
 }
+
+    /*Section 3*/
+
+.container-projects .projects-top{
+    background: #464646;
+}
+
+.container-projects .projects-top .projects-arrow{
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container-projects .projects-top .projects-carts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    margin-bottom: 40px;
+}
+
+.container-projects .projects-top .projects-carts span{
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+    margin-top: -50px;
+    margin-left: 15px;
+}
+
