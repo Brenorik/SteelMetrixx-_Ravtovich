@@ -275,12 +275,17 @@ table {
     margin-bottom: 40px;
 }
 
-.container-projects .projects-top .projects-carts span{
+.container-projects .projects-top .projects-carts {
+    margin-left: 180px;
+}
+
+
+.container-projects .projects-top .projects-carts a p{
     color: #FFF;
     font-size: 17px;
     font-weight: 600;
     line-height: 120%; /* 20.4px */
-    margin-top: -50px;
     margin-left: 15px;
+    margin-top: -50px;
 }
 
