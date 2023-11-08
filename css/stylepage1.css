@@ -271,21 +271,95 @@ table {
 .container-projects .projects-top .projects-carts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 300px; 
     margin-bottom: 40px;
 }
 
-.container-projects .projects-top .projects-carts {
-    margin-left: 180px;
+.container-projects .projects-top .projects-carts .carts{
+    position: relative;
 }
 
-
-.container-projects .projects-top .projects-carts a p{
+.container-projects .projects-top .projects-carts .carts .text a{
     color: #FFF;
     font-size: 17px;
     font-weight: 600;
     line-height: 120%; /* 20.4px */
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 155px;
     margin-left: 15px;
-    margin-top: -50px;
+    margin-bottom: 20px;
+}
+.container-projects .projects-top .projects-carts .carts .text  a img{
+    position: absolute;
+    left: 160px;
+    bottom: 3px;
 }
 
+.container-projects .projects-top .projects-mini{
+    padding-bottom: 100px;
+    text-align: center
+
+}
+
+.container-projects .projects-top .projects-mini a{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    text-decoration: none;
+
+}
+
+.container-projects .projects-top .projects-mini a img{
+    margin-left: 10px;
+}
+
+.container-projects .projects-bottom{
+    background: #EB6329;
+}
+
+.container-projects .projects-bottom .projects-questions h3{
+    color:  #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 130%; /* 44.2px */
+    padding-top: 150px;
+    width: 497px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.container-projects .projects-bottom .projects-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 150px;
+    
+}
+
+.container-projects .projects-bottom .projects-button .set p{
+    color: var(--orange, #EB6329);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    padding: 18px 28px;
+    border: solid;
+    background-color: #FFF;
+    width: 141px;
+}
+
+.container-projects .projects-bottom .projects-button .choose p{
+    color:  #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%; /* 20px */
+    padding: 18px 28px;
+    border: solid 1px #FFF;
+    background-color: #EB6329;
+    width: 154px;
+}
