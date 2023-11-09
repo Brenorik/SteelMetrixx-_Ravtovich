@@ -363,3 +363,128 @@ table {
     background-color: #EB6329;
     width: 154px;
 }
+
+
+/*Section 4*/
+
+.container-stages{
+    background-color: #FFF;
+}
+
+.container-stages .stages-head h2{
+    color: #464646;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: 1.02px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    width: 602px;
+    margin-bottom: 50px;
+}
+
+.container-stages .base-stages{
+    display: grid;
+    grid-template-columns: 412px 412px 412px;
+    column-gap: 40px;
+}
+
+.container-stages .base-stages .base-one img,
+.container-stages .base-stages .base-two img,
+.container-stages .base-stages .base-three img{
+    width: 100%;
+}
+
+
+.container-stages .base-stages .base-one h4,
+.container-stages .base-stages .base-two h4,
+.container-stages .base-stages .base-three h4{
+    color: #464646;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%; /* 33.6px */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container-stages .base-stages .base-one p,
+.container-stages .base-stages .base-two p,
+.container-stages .base-stages .base-three p{
+    color:#464646;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%; /* 26.4px */
+    margin-bottom: 100px;
+}
+
+.container-stages .stages-arrow{
+    margin-bottom: 71px;
+}
+
+.container-stages .stages-cycle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.container-stages .stages-cycle p{
+    color:#EB6329;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 120%; /* 26.4px */
+    width: 299px;
+    height: 79px;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: #EB6329;
+    padding-left: 10px;
+    margin-bottom: 11px;
+}
+
+.container-stages .big-arrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.container-stages .big-arrow .two,
+.container-stages .big-arrow .four,
+.container-stages .big-arrow .six{
+    margin-top: 92px;
+}
+
+.container-stages .stages-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.container-stages .stages-bottom p{
+    color:#EB6329;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 120%; /* 26.4px */
+    width: 299px;
+    height: 79px;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: #EB6329;
+    padding-left: 10px;
+    margin-top: 11px;
+    margin-bottom: 100px;
+}
+
+.container-stages .stages-bottom .one{
+    margin-left: 226px;
+
+}
+
+.container-stages .stages-bottom .two{
+    margin-left: 153px;
+
+}
+
+.container-stages .stages-bottom .three{
+    margin-left: 40px;
+
+}
