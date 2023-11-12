@@ -488,3 +488,67 @@ table {
     margin-left: 40px;
 
 }
+
+
+/*Section 5*/
+
+.container-advantages{
+    background: #D8D8D8;
+    padding-bottom: 100px;
+}
+
+.container-advantages .advantages-name{
+    color: #464646;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: 1.02px;
+    text-transform: uppercase;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.container-advantages .advantages-cart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+
+}
+
+.container-advantages .advantages-cart .cart,
+.container-advantages .advantages-cart .cart-big{
+    background-color: rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-columns: 87px 1fr;
+    padding: 50px 25px;
+}
+
+.container-advantages .advantages-cart .cart .advantages-text h4{
+    color: #464646;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 110%; /* 30.8px */
+    padding-top: 15px;
+    padding-bottom: 26px;
+}
+
+.container-advantages .advantages-cart .cart-big .advantages-text h4{
+    font-size: 28px;
+    color: #464646;
+    font-weight: 700;
+    line-height: 110%; /* 30.8px */
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+
+.container-advantages .advantages-cart .cart .advantages-text p,
+.container-advantages .advantages-cart .cart-big .advantages-text p{
+    color:  #464646;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%; /* 26.4px */
+}
+
+
