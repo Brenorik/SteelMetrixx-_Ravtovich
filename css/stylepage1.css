@@ -608,3 +608,112 @@ table {
     height: 641px;
 }
 
+/*Section 7*/
+
+.container-footer{
+    background: #1A1A1A;
+}
+
+.container-footer .footer-info{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 351px 295px;
+
+}
+
+.container-footer .footer-info .footer-logo >img{
+    padding-bottom: 19px;
+}
+
+.container-footer .footer-info .footer-logo .footer-left{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding-top: 20px;
+    align-items: end;
+
+}
+
+.container-footer .footer-info .footer-logo .footer-left p{
+    color: var(--White, #FFF);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+}
+
+.container-footer .footer-info .footer-logo .footer-policy p{
+    color: rgba(235, 99, 41, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    margin-top: 75px;
+}
+
+.container-footer .footer-info .footer-center ul li{
+    padding-bottom: 20px;
+}
+
+.container-footer .footer-info .footer-center ul li a{
+    color: #D8D8D8;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    text-decoration: none;
+
+}
+
+.container-footer .footer-info .footer-right h3{
+    color: #EB6329;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100%; /* 28px */
+    padding-bottom: 10px;
+}
+
+.container-footer .footer-info .footer-right  .tell{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    letter-spacing: 0.36px;
+    padding-bottom: 38px;
+}
+
+.container-footer .footer-info .footer-right .right-info{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.container-footer .footer-info .footer-right .right-address{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: start;
+}
+
+.container-footer .footer-info .footer-right .right-info .email{
+    color: #D8D8D8;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    text-decoration-line: underline;
+    text-transform: lowercase;
+
+}
+
+.container-footer .footer-info .footer-right .right-address .address{
+    color: var(--bckgrnd-grey, #D8D8D8);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+}
+
+.container-footer .footer-info .footer-right .footer-bootom{
+    color:  #ABABAB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+    padding-top: 70px;
+    text-align: end;
+}
