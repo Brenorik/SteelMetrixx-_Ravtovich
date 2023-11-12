@@ -7,7 +7,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -551,4 +551,60 @@ table {
     line-height: 120%; /* 26.4px */
 }
 
+/*Section 6*/
+
+.container-calculation{
+    padding-bottom: 100px;
+
+}
+
+.container-calculation .calculation-name h2{
+    padding-top: 100px;
+    color: #EB6329;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: 1.02px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    width: 751px;
+}
+
+.container-calculation .calculation-info{
+    display: grid;
+    grid-template-columns: 1fr 525px;
+    column-gap: 153px;
+}
+
+.container-calculation .calculation-info .calculation-left h3{
+    color: #464646;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%; /* 28px */
+    padding-bottom: 30px;
+}
+
+.container-calculation .calculation-info .calculation-left .calculation-transfer{
+    display: grid;
+    grid-template-columns: 27px 1fr;
+}
+
+.container-calculation .calculation-info .calculation-left .calculation-transfer p{
+    color:  #464646;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 20px;
+}
+
+.container-calculation .calculation-info .calculation-left >img{
+    padding-top: 30px;
+}
+
+.container-calculation .calculation-info .calculation-right img{
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 641px;
+}
 
