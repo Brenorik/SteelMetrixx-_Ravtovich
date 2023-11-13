@@ -649,6 +649,10 @@ table {
     margin-top: 75px;
 }
 
+.container-footer .footer-info .footer-logo .footer-policy p span{
+    color: rgba(171, 171, 171, 0.8);
+}
+
 .container-footer .footer-info .footer-center ul li{
     padding-bottom: 20px;
 }
