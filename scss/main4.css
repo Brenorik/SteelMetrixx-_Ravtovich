@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Gilroy";
+}
+
+.center {
+  max-width: 1316px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*Section 1*/
+.container-first {
+  background-color: #FFF;
+  height: 80px;
+  border-bottom: 1px solid #E3E3E3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.container-first header {
+  background: #fff;
+  font-family: "Gilroy";
+  margin-top: 14px;
+  margin-bottom: 14px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 610px 1fr 197px;
+}
+
+.container-first header .menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-first header .menu ul li a,
+.container-first header .tel {
+  color: #464646;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%; /* 18px */
+  text-decoration: none;
+}
+
+.container-first header .menu ul li a img {
+  margin-left: 8px;
+  vertical-align: bottom;
+}
+
+.container-first header .tel {
+  color: #EB6329;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.head .head-content {
+  background: url(../images/page4/metallokonstruk.jpg), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  padding-top: 80px;
+}
+
+.head .head-content .head-content-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.head .head-content .head-content-name .name {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  margin-top: 150px;
+}
+
+.head .head-content .head-content-name .name h1 {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%; /* 52px */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: 510px;
+}
+
+.head .head-content .head-content-name p {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%; /* 28.6px */
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 30px;
+  width: 638px;
+  margin-bottom: 362px;
+}
+
+.resourcebase h2 {
+  color: #EB6329;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 130%; /* 44.2px */
+  letter-spacing: 1.02px;
+  text-transform: uppercase;
+}
+.resourcebase h3 {
+  color: #464646;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.resourcebase p {
+  color: #464646;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%; /* 28.6px */
+  padding-bottom: 10px;
+}
+.resourcebase img {
+  max-height: 747px;
+  max-width: 1316px;
+  margin-bottom: 100px;
+}/*# sourceMappingURL=main4.css.map */
