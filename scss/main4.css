@@ -154,6 +154,7 @@ table {
   margin-bottom: 362px;
 }
 
+/*Section 2*/
 .resourcebase h2 {
   color: #EB6329;
   font-size: 34px;
@@ -182,4 +183,140 @@ table {
   max-height: 747px;
   max-width: 1316px;
   margin-bottom: 100px;
-}/*# sourceMappingURL=main4.css.map */
+}
+
+/*Section 3*/
+.technological-equipment h2 {
+  color: #464646;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.technological-equipment h3 {
+  color: #464646;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+  margin-bottom: 20px;
+}
+.technological-equipment .container {
+  padding-bottom: 30px;
+}
+.technological-equipment .container ul {
+  border-bottom: solid 1px #D8D8D8;
+}
+.technological-equipment .container ul .col-6 {
+  width: 49%;
+}
+.technological-equipment .container ul li a {
+  color: #ABABAB;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%; /* 26.4px */
+}
+.technological-equipment .container ul li .active {
+  color: #EB6329;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%; /* 26.4px */
+}
+.technological-equipment .Cleaning {
+  color: #464646;
+  font-size: 22px;
+  line-height: 130%; /* 28.6px */
+}
+.technological-equipment .Cleaning p {
+  font-weight: 500;
+}
+.technological-equipment .Cleaning h4 {
+  font-weight: 700;
+}
+.technological-equipment .Cleaning .Cleaning-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.technological-equipment .Cleaning .Cleaning-info .marker-info {
+  align-self: center;
+}
+.technological-equipment .Cleaning .Cleaning-info .marker-info h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.technological-equipment .Cleaning .Cleaning-info .marker-info .right-info {
+  display: flex;
+  align-items: flex-start;
+}
+.technological-equipment .Cleaning .Cleaning-info .marker-info .right-info img {
+  padding-right: 15px;
+}
+
+/*Section 4*/
+.container-production h2 {
+  color: #464646;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+.container-production .container {
+  padding-bottom: 30px;
+}
+.container-production .container ul {
+  border-bottom: solid 1px #D8D8D8;
+}
+.container-production .container ul .col-6 {
+  width: 49%;
+}
+.container-production .container ul li a {
+  color: #ABABAB;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%; /* 26.4px */
+}
+.container-production .container ul li .active {
+  color: #EB6329;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%; /* 26.4px */
+}
+.container-production .production {
+  color: #464646;
+  font-size: 22px;
+  line-height: 130%; /* 28.6px */
+}
+.container-production .production p {
+  font-weight: 500;
+}
+.container-production .production h4 {
+  font-weight: 700;
+}
+.container-production .production .production-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.container-production .production .production-info .marker-info {
+  align-self: center;
+}
+.container-production .production .production-info .marker-info h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.container-production .production .production-info .marker-info .right-info {
+  display: flex;
+  align-items: flex-start;
+}
+.container-production .production .production-info .marker-info .right-info img {
+  padding-right: 15px;
+}
+
+/*Section 5*//*# sourceMappingURL=main4.css.map */
