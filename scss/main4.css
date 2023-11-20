@@ -319,4 +319,176 @@ table {
   padding-right: 15px;
 }
 
-/*Section 5*//*# sourceMappingURL=main4.css.map */
+/*Section 5*/
+.plot {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.plot p {
+  color: #464646;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%; /* 28.6px */
+}
+.plot h2 {
+  color: #464646;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+}
+.plot .painting {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.plot .painting .painting-left {
+  align-self: center;
+}
+.plot .painting .painting-left h4 {
+  color: #464646;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 130%; /* 28.6px */
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.plot .painting .painting-left .info {
+  display: flex;
+  align-items: flex-start;
+}
+.plot .painting .painting-left .info img {
+  padding-right: 15px;
+}
+.plot .painting .painting-left .info p {
+  padding-bottom: 10px;
+}
+.plot .configuration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  padding-top: 30px;
+}
+.plot .configuration p {
+  align-self: center;
+}
+.plot .storage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.plot .storage .storage-left {
+  align-self: center;
+}
+.plot .storage .storage-left p {
+  padding-bottom: 10px;
+}
+.plot .storage .storage-left .info {
+  display: flex;
+  align-items: flex-start;
+}
+.plot .storage .storage-left .info img {
+  padding-right: 15px;
+}
+.plot .storage .storage-left .info p {
+  padding-bottom: 10px;
+}
+.plot .stock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.plot .stock p {
+  align-self: center;
+}
+
+/*Section 6*/
+.mounting h2 {
+  color: #464646;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.mounting .mounting {
+  color: #464646;
+  font-size: 22px;
+  line-height: 130%; /* 28.6px */
+  font-weight: 500;
+}
+.mounting .mounting .mounting-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.mounting .mounting .mounting-info .marker-info {
+  align-self: center;
+}
+.mounting .mounting .mounting-info .marker-info p {
+  padding-bottom: 10px;
+}
+.mounting .mounting .mounting-info .marker-info .right-info {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+.mounting .mounting .mounting-info .marker-info .right-info img {
+  padding-right: 15px;
+}
+
+/*Section 7*/
+.container-help {
+  margin-top: 150px;
+}
+.container-help .projects-bottom {
+  background: #EB6329;
+}
+.container-help .projects-bottom .projects-questions h3 {
+  color: #FFF;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 130%; /* 44.2px */
+  padding-top: 150px;
+  width: 906px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.container-help .projects-bottom .projects-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 150px;
+}
+.container-help .projects-bottom .projects-button .set p {
+  color: #EB6329;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  padding: 18px 22px;
+  border: solid;
+  background-color: #FFF;
+  width: 213px;
+}
+.container-help .projects-bottom .projects-button .choose p {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+  padding: 18px 22px;
+  border: solid 1px #FFF;
+  background-color: #EB6329;
+  width: 197px;
+}/*# sourceMappingURL=main4.css.map */

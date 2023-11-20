@@ -339,4 +339,184 @@ table {
 
 /*Section 5*/
 
+.plot{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    p{
+        color: #464646;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 130%; /* 28.6px */
+    }
+    h2{
+        color: #464646;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 120%; /* 33.6px */
+    }
+    .painting{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 100px;
+        column-gap: 40px;
+        .painting-left{
+            align-self: center;
+            h4{
+                color:#464646;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 130%; /* 28.6px */
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+            .info{
+                display: flex;
+                align-items: flex-start;
+                img{
+                    padding-right: 15px;
+                }
+                p{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    .configuration{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 100px;
+        column-gap: 40px;
+        padding-top: 30px;
+        p{
+            align-self: center;
+        }
+    }
+    .storage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+        column-gap: 40px;
+        .storage-left{
+            align-self: center;
+            p{
+                padding-bottom: 10px;
+            }
+            .info{
+                display: flex;
+                align-items: flex-start;
+                img{
+                    padding-right: 15px;
+                }
+                p{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    .stock{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 100px;
+        column-gap: 40px;
+        p{
+            align-self: center;
+        }
+    }
+}
 
+/*Section 6*/
+
+.mounting{
+    h2{
+        color: #464646;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 120%; /* 33.6px */
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        
+    }
+    .mounting{
+        color: #464646;
+        font-size: 22px;
+        line-height: 130%; /* 28.6px */
+        font-weight: 500;
+        .mounting-info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 50px;
+            column-gap: 40px;
+            .marker-info{
+                align-self: center;
+                p{
+                    padding-bottom: 10px;  
+                }
+                
+                .right-info{
+                    display: flex;
+                    align-items: flex-start;
+                    padding-bottom: 10px;
+                    img{
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*Section 7*/
+
+.container-help{
+    margin-top: 150px;
+    .projects-bottom{
+        background: #EB6329;
+        .projects-questions{
+            h3{
+                color:  #FFF;
+                text-align: center;
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 130%; /* 44.2px */
+                padding-top: 150px;
+                width: 906px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+        }
+        .projects-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 150px;
+            .set{
+                p{
+                    color: #EB6329;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 100%; /* 20px */
+                    padding: 18px 22px;
+                    border: solid;
+                    background-color: #FFF;
+                    width: 213px;
+                }
+            }
+            .choose{
+                p{
+                    color:  #FFF;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 100%; /* 20px */
+                    padding: 18px 22px;
+                    border: solid 1px #FFF;
+                    background-color: #EB6329;
+                    width: 197px;
+                }
+            }
+        }
+    }
+} 
+    
