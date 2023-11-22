@@ -63,6 +63,18 @@ table {
 
 /*Section 1*/
 
+.container-first{
+    background-color: #FFF;
+    height: 80px;
+    border-bottom: 1px solid #E3E3E3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
 .container-first header{
     background: #fff;
     font-family: 'Gilroy';
@@ -72,10 +84,20 @@ table {
     display: grid;
     grid-template-columns: 610px 1fr 197px;
 }
-.container-first header .menu ul{
+.container-first header .menu .btn-menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.container-first header .menu .btn-menu .dropdown .btn{
+    color: #464646;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%; /* 18px */
+    text-decoration: none;
+}
+
 
 .container-first header .menu ul li a,
 .container-first header .tel{
@@ -86,10 +108,10 @@ table {
     text-decoration: none;
 }
 
-.container-first header .menu ul li a img{
+/* .container-first header .menu ul li a img{
     margin-left: 8px;
     vertical-align: bottom;
-}
+} */
 
 .container-first header .tel{
     color: #EB6329;
@@ -97,23 +119,25 @@ table {
     justify-content: flex-end;
 }
 
-.container-first .head-content{
+.container-head .head-content{
     background-image: url(../images/headfon.jpg);
+    padding-top: 100px;
+    background-size: cover;
 
 }
 
-.container-first .head-content .head-content-name{
+.container-head  .head-content .head-content-name{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.container-first .head-content .head-content-name .name{
+.container-head  .head-content .head-content-name .name{
     display: grid;
     grid-template-columns: 15px 1fr;
     margin-top: 100px;
 }
 
-.container-first .head-content .head-content-name .name h1{
+.container-head .head-content .head-content-name .name h1{
     color: #FFF;
     font-size: 40px;
     font-weight: 600;
@@ -123,7 +147,7 @@ table {
     width: 623px;
 }
 
-.container-first .head-content .head-content-name p{
+.container-head  .head-content .head-content-name p{
     color: #FFF;
     font-size: 22px;
     font-weight: 500;
@@ -134,17 +158,17 @@ table {
     width: 638px;
 }
 
-.container-first .head-content .head-content-name a{
+.container-head  .head-content .head-content-name a{
     grid-column: 1;
     grid-row: 3;
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.container-first .head-botton{
+.container-head .head-botton{
     background: #1A1A1A;
 }
-.container-first .head-botton .head-botton-card{
+.container-head  .head-botton .head-botton-card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
@@ -153,7 +177,7 @@ table {
     text-align: center;
 }
 
-.container-first .head-botton .head-botton-card p{
+.container-head  .head-botton .head-botton-card p{
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
@@ -162,11 +186,11 @@ table {
     padding-bottom: 17px;
 }
 
-.container-first .head-botton .head-botton-card img{
+.container-head  .head-botton .head-botton-card img{
      width: 100%;
 } 
 
-.container-first .head-botton .head-botton-card .head-card{
+.container-head  .head-botton .head-botton-card .head-card{
     background: #464646;
 }
 
