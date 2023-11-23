@@ -189,11 +189,13 @@ table {
     width: 638px;
 }
 
-.container-head  .head-content .head-content-name a{
+.container-head  .head-content .head-content-name .btn-headarrow{
     grid-column: 1;
     grid-row: 3;
     margin-top: 50px;
     margin-bottom: 100px;
+    text-align: start;
+    margin-left: -13px;
 }
 
 .container-head .head-botton{
@@ -404,7 +406,7 @@ table {
     
 }
 
-.container-projects .projects-bottom .projects-button .set p{
+.container-projects .projects-bottom .projects-button .btn-projectsone{
     color: var(--orange, #EB6329);
     font-size: 20px;
     font-weight: 700;
@@ -415,7 +417,8 @@ table {
 
 }
 
-.container-projects .projects-bottom .projects-button .choose p{
+
+.container-projects .projects-bottom .projects-button .btn-projectstwo{
     color:  #FFF;
     font-size: 20px;
     font-weight: 600;
@@ -424,6 +427,11 @@ table {
     border: solid 1px #FFF;
     background-color: #EB6329;
 
+}
+
+.container-projects .projects-bottom .projects-button .btn-projectsone:hover,
+.container-projects .projects-bottom .projects-button .btn-projectstwo:hover{
+    background-color: #F0F0F0;
 }
 
 
@@ -659,8 +667,96 @@ table {
     padding-bottom: 20px;
 }
 
-.container-calculation .calculation-info .calculation-left >img{
+
+
+/* кнопка начало */
+
+.modal .modal-dialog .modal-content{
+    width: 638px;
+}
+
+.modal .modal-dialog .modal-content .modal-header{
+    border-bottom: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .contacts-right input,
+.modal .modal-dialog .modal-content .modal-body .contacts-right select,
+.modal .modal-dialog .modal-content .modal-body .contacts-right .form-floating{
+    margin-bottom: 15px;
+    width: 518px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .contacts-right .form-check-input{
+    width: 15px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .contacts-right .form-floating textarea{
+    height: 130px;
+}
+
+.modal .modal-dialog .modal-content .modal-body .contacts-right .form-check{
+    color: #EB6329;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%; /* 18px */
+    margin-bottom: 40px;
+
+}
+
+.modal .modal-dialog .modal-content .modal-body .contacts-right .form-check span{
+    color: #464646;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.modal .modal-dialog .modal-content .modal-footer{
+    border-top: none;
+    justify-content: start;
+    padding-left: 60px;
+    padding-bottom: 45px;
+    margin-top: -40px;
+}
+
+.modal .modal-dialog .modal-content .modal-footer .btn{
+    padding: 18px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%; /* 20px */
+}
+
+.modal .modal-dialog .modal-content .modal-footer .btn:hover{
+    background: #EB6329;
+    border-color: #EB6329;
+
+}
+
+.modal .modal-dialog .modal-content .modal-body h3{
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%; /* 33.6px */
+}
+
+.modal .modal-dialog .modal-content .modal-body p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    padding-bottom: 50px;
+}
+
+/* кнопка конец */
+
+
+.container-calculation .calculation-info .calculation-left .btn{
     padding-top: 30px;
+    margin-left: -13px;
 }
 
 .container-calculation .calculation-info .calculation-right img{
@@ -680,7 +776,7 @@ table {
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
-    grid-template-columns: 1fr 351px 295px;
+    grid-template-columns: 1fr 453px 295px;
 
 }
 
@@ -696,11 +792,16 @@ table {
 
 }
 
-.container-footer .footer-info .footer-logo .footer-left p{
-    color: var(--White, #FFF);
+.container-footer .footer-info .footer-logo .footer-left a{
+    color:  #FFF;
     font-size: 18px;
     font-weight: 500;
     line-height: 100%; /* 18px */
+    text-decoration: none;
+}
+
+.container-footer .footer-info .footer-logo .footer-left a:hover{
+    color: #EB6329;
 }
 
 .container-footer .footer-info .footer-logo .footer-policy p{
@@ -728,6 +829,11 @@ table {
 
 }
 
+.container-footer .footer-info .footer-center ul li a:hover{
+    color: #EB6329;
+}
+
+
 .container-footer .footer-info .footer-right h3{
     color: #EB6329;
     font-size: 28px;
@@ -752,6 +858,10 @@ table {
     align-items: center;
 }
 
+.container-footer .footer-info .footer-right .right-info a:hover{
+    color: #EB6329;
+}
+
 .container-footer .footer-info .footer-right .right-address{
     display: grid;
     grid-template-columns: 30px 1fr;
@@ -769,10 +879,15 @@ table {
 }
 
 .container-footer .footer-info .footer-right .right-address .address{
-    color: var(--bckgrnd-grey, #D8D8D8);
+    color: #D8D8D8;
     font-size: 18px;
     font-weight: 500;
     line-height: 140%; /* 25.2px */
+    text-decoration: none;
+}
+
+.container-footer .footer-info .footer-right .right-address .address:hover{
+    color: #EB6329;
 }
 
 .container-footer .footer-info .footer-right .footer-bootom{

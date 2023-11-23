@@ -204,6 +204,10 @@ table {
                     text-decoration: none;
                     width: 200px;
                 }
+                a:hover{
+                    color: #EB6329;
+                }
+
             }
         }
         .SteelMetriXX{
@@ -415,20 +419,91 @@ table {
                 .region-button{
                     display: flex;
                     justify-content: center;
-                    p{
+                    .regionbtn{
                         color: #FFF;
                         font-size: 20px;
                         font-weight: 700;
                         line-height: 100%; /* 20px */
                         padding: 18px 27px;
                         align-items: center;
-                        background: var(--Orange, #EB6329);
-                        width: 196px;
-                        height: 56px;
+                        background: #EB6329;
                         text-decoration: none;
+
                     }
-                    a{
-                        text-decoration: none;
+                    .regionbtn:hover{
+                        background: #F0F0F0;
+                        color: #EB6329;
+                    }
+                    .modal{
+                        .modal-dialog{
+                            .modal-content{
+                                width: 638px;
+                                .modal-header{
+                                    border-bottom: none;
+                                }
+                                .modal-body{
+                                    margin-left: 45px;
+                                    margin-right: 45px;
+                                    .contacts-right{
+                                        input,
+                                        select,
+                                        .form-floating{
+                                            margin-bottom: 15px;
+                                            width: 518px;
+                                        }
+                                        .form-check-input{
+                                            width: 15px;
+                                        }
+                                        .form-floating{
+                                            textarea{
+                                                height: 130px;
+                                            }
+                                        }
+                                        .form-check{
+                                            color: #EB6329;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            line-height: 120%; /* 18px */
+                                            margin-bottom: 40px;
+                                            span{
+                                                color: #464646;
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                                line-height: 120%;
+                                            }
+                                        }
+                                    }
+                                    h3{
+                                        color: #000;
+                                        font-size: 28px;
+                                        font-weight: 600;
+                                        line-height: 120%; /* 33.6px */
+                                    }
+                                    .managerinfo{
+                                        color: #000;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 120%; /* 21.6px */
+                                        padding-bottom: 50px;
+                                    }
+                                }
+                                .modal-footer{
+                                    border-top: none;
+                                    justify-content: start;
+                                    padding-left: 60px;
+                                    padding-bottom: 45px;
+                                    margin-top: -40px;
+                                    .btn{
+                                        padding: 18px 28px;
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        line-height: 100%; /* 20px */
+
+                                    }
+                                }
+                            }
+
+                        }
                     }
 
                 }
