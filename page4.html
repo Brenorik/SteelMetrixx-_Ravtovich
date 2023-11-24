@@ -277,12 +277,135 @@
                     <h3>Поможем реализовать ваш проект от проектирования и производства строительных компонентов до монтажа и ввода в эксплуатацию.</h3>
                 </div>
                 <div class="projects-button center">
+
                     <div class="set">
-                        <p>Оставить заявку</p>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="contacts-right">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Ваше имя*" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="E-mail*" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Телефон" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Регион" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Город (населенный пункт)*" aria-label="default input example">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Отрасль*</option>
+                                            <option class="name" value="1">Сельское хозяйство</option>
+                                            <option class="name" value="2">Логистика и склады</option>
+                                            <option class="name" value="3">Торговые организации</option>
+                                            <option class="name" value="4">Промышленность</option>
+                                            <option class="name" value="5">Спортивные организации</option>
+                                            <option class="name" value="6">Проживание и размещение людей</option>
+                                            <option class="name" value="7">Энергетика</option>
+                                            <option class="name" value="8">Автомобильный бизнес</option>
+                                            <option class="name" value="9">Административные и офисные здания</option>
+                                            <option class="name" value="10">Медицина и образование</option>
+                                            <option class="name" value="11">Дороги и мосты</option>
+                                            <option class="name" value="12">Оборонно-промышленный комплекс</option>
+                                        </select>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Комментарий</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Соглашаюсь <span>на обработку персональных данных в соответствии с</span> Политикой конфиденциальности
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Отправить заявку</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Ваша заявка успешно отправлена</h3>
+                                    <p class="managerinfo">Наши менеджеры рассмотрят вашу заявку 
+                                    и свяжутся с вами в ближайшее время.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-projectsone" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><p>Задать вопрос</p></button>
+
                     </div>
                     <div class="choose">
-                        <p>Задать вопрос</p>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="contacts-right">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Ваше имя*" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="E-mail*" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Телефон" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Регион" aria-label="default input example">
+                                        <input class="form-control form-control-lg" type="text" placeholder="Город (населенный пункт)*" aria-label="default input example">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Отрасль*</option>
+                                            <option class="name" value="1">Сельское хозяйство</option>
+                                            <option class="name" value="2">Логистика и склады</option>
+                                            <option class="name" value="3">Торговые организации</option>
+                                            <option class="name" value="4">Промышленность</option>
+                                            <option class="name" value="5">Спортивные организации</option>
+                                            <option class="name" value="6">Проживание и размещение людей</option>
+                                            <option class="name" value="7">Энергетика</option>
+                                            <option class="name" value="8">Автомобильный бизнес</option>
+                                            <option class="name" value="9">Административные и офисные здания</option>
+                                            <option class="name" value="10">Медицина и образование</option>
+                                            <option class="name" value="11">Дороги и мосты</option>
+                                            <option class="name" value="12">Оборонно-промышленный комплекс</option>
+                                        </select>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                            <label for="floatingTextarea">Комментарий</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Соглашаюсь <span>на обработку персональных данных в соответствии с</span> Политикой конфиденциальности
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Отправить заявку</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Ваша заявка успешно отправлена</h3>
+                                    <p class="managerinfo">Наши менеджеры рассмотрят вашу заявку 
+                                    и свяжутся с вами в ближайшее время.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-projectstwo" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><p>Выбрать проект</p></button>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -324,7 +447,69 @@
                 <h3>Остались вопросы по производственным технологиям?</h3>
                 <p>Напишите нам и наши специалисты ответят на все ваши вопросы.</p>
                 <div class="questions-button">
-                    <a href="#"><p>Задать вопрос</p></a>
+
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="contacts-right">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Ваше имя*" aria-label="default input example">
+                                    <input class="form-control form-control-lg" type="text" placeholder="E-mail*" aria-label="default input example">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Телефон" aria-label="default input example">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Регион" aria-label="default input example">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Город (населенный пункт)*" aria-label="default input example">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Отрасль*</option>
+                                        <option class="name" value="1">Сельское хозяйство</option>
+                                        <option class="name" value="2">Логистика и склады</option>
+                                        <option class="name" value="3">Торговые организации</option>
+                                        <option class="name" value="4">Промышленность</option>
+                                        <option class="name" value="5">Спортивные организации</option>
+                                        <option class="name" value="6">Проживание и размещение людей</option>
+                                        <option class="name" value="7">Энергетика</option>
+                                        <option class="name" value="8">Автомобильный бизнес</option>
+                                        <option class="name" value="9">Административные и офисные здания</option>
+                                        <option class="name" value="10">Медицина и образование</option>
+                                        <option class="name" value="11">Дороги и мосты</option>
+                                        <option class="name" value="12">Оборонно-промышленный комплекс</option>
+                                    </select>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Комментарий</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Соглашаюсь <span>на обработку персональных данных в соответствии с</span> Политикой конфиденциальности
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Отправить заявку</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Ваша заявка успешно отправлена</h3>
+                            <p class="managerinfo">Наши менеджеры рассмотрят вашу заявку 
+                            и свяжутся с вами в ближайшее время.</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div> 
+                    <button class="btn regionbtn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Задать вопрос</button>                                              
+                
                 </div>
             </div>          
         </section>
@@ -355,15 +540,15 @@
                     <img src="./images/Logofooter.png" alt="Logo">
                     <div class="footer-left">
                         <img src="./images/icon/Telegram.png" alt="Telegram">
-                        <p>Telegram</p>
+                        <a href="https://web.telegram.org/a/" target="_blank" >Telegram</a>
                     </div>
                     <div class="footer-left">
                         <img src="./images/icon/WhatsApp.png" alt="WhatsApp">
-                        <p>WhatsApp</p>
+                        <a href="https://web.whatsapp.com/" target="_blank" >WhatsApp</a>
                     </div>
                     <div class="footer-left">
                         <img src="./images/icon/Youtube.png" alt="Youtube">
-                        <p>Youtube</p>
+                        <a href="https://www.youtube.com/" target="_blank" >Youtube</a>
                     </div>
                     <div class="footer-policy">
                     <p>Политика конфиденциальности <span>и</span> Техническая документация</p>
@@ -371,10 +556,10 @@
                 </div>
                 <div class="footer-center">
                     <ul>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Производственные технологии</a></li>
-                        <li><a href="#">Выполненные проекты</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="./page3.html">О компании</a></li>
+                        <li><a href="./page4.html">Производственные технологии</a></li>
+                        <li><a href="./page5.html">Выполненные проекты</a></li>
+                        <li><a href="./page2.html">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="footer-right">
@@ -382,11 +567,11 @@
                     <p class="tell">Звонок по России бесплатный</p>
                     <div class="right-info">
                         <img src="./images/icon/mailfooter.png" alt="mailfooter">
-                        <p class="email">info@stelmetrixx.ru</p>
+                        <a href="mailto: info@stelmetrixx.ru"  target="_blank" class="email">info@stelmetrixx.ru</a>
                     </div>
                     <div class="right-address">
                         <img src="./images/icon/locationfooter.png" alt="locationfooter">
-                        <p class="address">Оренбургская область, Оренбургский район, поселок Пригородный, ул. Зерновая, 2</p>
+                        <a href="https://yandex.by/maps/-/CDewADZE" target="_blank"  class="address">Оренбургская область, Оренбургский район, поселок Пригородный, ул. Зерновая, 2</a>
                     </div>
                     <p class="footer-bootom">© ООО “SteеlMetrixx” 2023</p>
                 </div>
