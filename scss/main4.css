@@ -66,6 +66,10 @@ table {
 }
 
 /*Section 1*/
+.container-first header .burger {
+  display: none;
+}
+
 .container-first {
   background-color: #FFF;
   height: 80px;
@@ -154,9 +158,10 @@ table {
 
 .head .head-content {
   background: url(../images/page4/metallokonstruk.jpg), lightgray 50%/cover no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
   margin-bottom: 100px;
   padding-top: 80px;
 }
@@ -203,6 +208,11 @@ table {
   letter-spacing: 1.02px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1024px) {
+  .resourcebase h2 {
+    font-size: 30px;
+  }
+}
 .resourcebase h3 {
   color: #464646;
   font-size: 28px;
@@ -212,6 +222,13 @@ table {
   text-transform: uppercase;
   padding: 20px 0;
 }
+@media only screen and (max-width: 1024px) {
+  .resourcebase h3 {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
 .resourcebase p {
   color: #464646;
   font-size: 22px;
@@ -219,10 +236,25 @@ table {
   line-height: 130%; /* 28.6px */
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 1024px) {
+  .resourcebase p {
+    font-size: 18px;
+  }
+}
 .resourcebase img {
   max-height: 747px;
   max-width: 1316px;
   margin-bottom: 100px;
+}
+@media only screen and (max-width: 1336px) {
+  .resourcebase img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .resourcebase img {
+    margin-bottom: 80px;
+  }
 }
 
 /*Section 3*/
@@ -235,6 +267,12 @@ table {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .technological-equipment h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
 .technological-equipment h3 {
   color: #464646;
   font-size: 28px;
@@ -242,11 +280,17 @@ table {
   line-height: 120%; /* 33.6px */
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1024px) {
+  .technological-equipment h3 {
+    font-size: 24px;
+  }
+}
 .technological-equipment .container {
   padding-bottom: 30px;
 }
 .technological-equipment .container ul {
   border-bottom: solid 1px #D8D8D8;
+  align-items: end;
 }
 .technological-equipment .container ul .col-6 {
   width: 49%;
@@ -257,16 +301,33 @@ table {
   font-weight: 500;
   line-height: 120%; /* 26.4px */
 }
+@media only screen and (max-width: 1024px) {
+  .technological-equipment .container ul li a {
+    font-size: 18px;
+    width: 340px;
+  }
+}
 .technological-equipment .container ul li .active {
   color: #EB6329;
   font-size: 22px;
   font-weight: 500;
   line-height: 120%; /* 26.4px */
 }
+@media only screen and (max-width: 1024px) {
+  .technological-equipment .container ul li .active {
+    font-size: 18px;
+    width: 340px;
+  }
+}
 .technological-equipment .Cleaning {
   color: #464646;
   font-size: 22px;
   line-height: 130%; /* 28.6px */
+}
+@media only screen and (max-width: 1024px) {
+  .technological-equipment .Cleaning {
+    font-size: 18px;
+  }
 }
 .technological-equipment .Cleaning p {
   font-weight: 500;
@@ -280,6 +341,22 @@ table {
   margin-bottom: 50px;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .technological-equipment .Cleaning .Cleaning-info {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .technological-equipment .Cleaning .Cleaning-info > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .technological-equipment .Cleaning .Cleaning-info .marker-info {
   align-self: center;
@@ -305,6 +382,13 @@ table {
   margin-bottom: 30px;
   margin-top: 100px;
 }
+@media only screen and (max-width: 1024px) {
+  .container-production h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+}
 .container-production .container {
   padding-bottom: 30px;
 }
@@ -320,16 +404,33 @@ table {
   font-weight: 500;
   line-height: 120%; /* 26.4px */
 }
+@media only screen and (max-width: 1024px) {
+  .container-production .container ul li a {
+    font-size: 18px;
+    width: 340px;
+  }
+}
 .container-production .container ul li .active {
   color: #EB6329;
   font-size: 22px;
   font-weight: 500;
   line-height: 120%; /* 26.4px */
 }
+@media only screen and (max-width: 1024px) {
+  .container-production .container ul li .active {
+    font-size: 18px;
+    width: 340px;
+  }
+}
 .container-production .production {
   color: #464646;
   font-size: 22px;
   line-height: 130%; /* 28.6px */
+}
+@media only screen and (max-width: 1024px) {
+  .container-production .production {
+    font-size: 18px;
+  }
 }
 .container-production .production p {
   font-weight: 500;
@@ -343,6 +444,21 @@ table {
   margin-bottom: 50px;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .container-production .production .production-info {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container-production .production .production-info > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .container-production .production .production-info .marker-info {
   align-self: center;
@@ -370,11 +486,21 @@ table {
   font-weight: 500;
   line-height: 130%; /* 28.6px */
 }
+@media only screen and (max-width: 1024px) {
+  .plot p {
+    font-size: 18px;
+  }
+}
 .plot h2 {
   color: #464646;
   font-size: 28px;
   font-weight: 600;
   line-height: 120%; /* 33.6px */
+}
+@media only screen and (max-width: 1024px) {
+  .plot h2 {
+    font-size: 24px;
+  }
 }
 .plot .painting {
   display: grid;
@@ -382,6 +508,21 @@ table {
   margin-bottom: 100px;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .plot .painting {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plot .painting > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .plot .painting .painting-left {
   align-self: center;
@@ -394,6 +535,12 @@ table {
   padding-top: 30px;
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 1024px) {
+  .plot .painting .painting-left h4 {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+}
 .plot .painting .painting-left .info {
   display: flex;
   align-items: flex-start;
@@ -404,6 +551,11 @@ table {
 .plot .painting .painting-left .info p {
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 1024px) {
+  .plot .painting .painting-left .info p {
+    padding-bottom: 5px;
+  }
+}
 .plot .configuration {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -411,6 +563,21 @@ table {
   -moz-column-gap: 40px;
        column-gap: 40px;
   padding-top: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .plot .configuration {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plot .configuration > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .plot .configuration p {
   align-self: center;
@@ -421,6 +588,22 @@ table {
   margin-bottom: 30px;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .plot .storage {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plot .storage > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .plot .storage .storage-left {
   align-self: center;
@@ -438,12 +621,32 @@ table {
 .plot .storage .storage-left .info p {
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 1024px) {
+  .plot .storage .storage-left .info p {
+    padding-bottom: 5px;
+  }
+}
 .plot .stock {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 100px;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .plot .stock {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plot .stock > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .plot .stock p {
   align-self: center;
@@ -459,11 +662,21 @@ table {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .mounting h2 {
+    font-size: 24px;
+  }
+}
 .mounting .mounting {
   color: #464646;
   font-size: 22px;
   line-height: 130%; /* 28.6px */
   font-weight: 500;
+}
+@media only screen and (max-width: 1024px) {
+  .mounting .mounting {
+    font-size: 18px;
+  }
 }
 .mounting .mounting .mounting-info {
   display: grid;
@@ -472,11 +685,30 @@ table {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
+@media only screen and (max-width: 1024px) {
+  .mounting .mounting .mounting-info {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .mounting .mounting .mounting-info > img {
+    width: 340px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .mounting .mounting .mounting-info .marker-info {
   align-self: center;
 }
 .mounting .mounting .mounting-info .marker-info p {
   padding-bottom: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .mounting .mounting .mounting-info .marker-info p {
+    padding-bottom: 5px;
+  }
 }
 .mounting .mounting .mounting-info .marker-info .right-info {
   display: flex;
@@ -490,6 +722,11 @@ table {
 /*Section 7*/
 .container-help {
   margin-top: 150px;
+}
+@media only screen and (max-width: 1024px) {
+  .container-help {
+    margin-top: 130px;
+  }
 }
 .container-help .projects-bottom {
   background: #EB6329;
@@ -505,12 +742,23 @@ table {
   margin: 0 auto;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 1024px) {
+  .container-help .projects-bottom .projects-questions h3 {
+    font-size: 30px;
+    width: 720px;
+  }
+}
 .container-help .projects-bottom .projects-button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding-bottom: 150px;
+}
+@media only screen and (max-width: 1024px) {
+  .container-help .projects-bottom .projects-button {
+    padding-bottom: 110px;
+  }
 }
 .container-help .projects-bottom .projects-button .regionbtn {
   color: #FFF;
@@ -621,6 +869,13 @@ table {
   text-transform: uppercase;
   margin-top: 150px;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 1024px) {
+  .container-technologies h2 {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
 }
 .container-technologies .container {
   padding-bottom: 30px;
@@ -882,4 +1137,110 @@ table {
   line-height: 100%; /* 16px */
   padding-top: 70px;
   text-align: end;
+}
+
+@media screen and (max-width: 1336px) {
+  .center {
+    width: calc(100% - 90px);
+  }
+  .container-first header .burger {
+    display: block;
+    height: 20px;
+  }
+  .container-first header .burger i {
+    display: block;
+    width: 30px;
+    margin: 3px 0;
+    height: 3px;
+    background: #464646;
+  }
+  .container-first header .menu {
+    /* display: none; */
+    left: -100%;
+    /* opacity: 0; */
+    min-height: 100vh;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 85%;
+    z-index: 1;
+    transition: 1s;
+    min-width: 270px;
+    color: #fff;
+    margin-top: 80px;
+  }
+  .container-first header .menu.menu-show {
+    left: 0;
+    margin-top: 80px;
+  }
+  .container-first header .menu .btn-menu {
+    align-items: flex-start;
+    padding-left: 57px;
+    padding-top: 30px;
+  }
+  .container-first header .menu .btn-menu li {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 30px;
+    width: 95%;
+    margin-top: 0;
+  }
+  .container-first header .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .container-first header .menu ul img {
+    display: none;
+  }
+  .container-first header .menu ul li,
+  .container-first header .menu ul li.contact-btn {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 30px 0;
+  }
+  .container-first header .menu .btn-menu .dropdown .dropdown-menu {
+    display: contents;
+  }
+  .container-first header .menu .btn-menu .dropdown .dropdown-menu .one {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .container-first header .menu .btn-menu .dropdown {
+    border: none;
+    margin-bottom: -30px;
+  }
+  .form-floating > label {
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .head .head-content {
+    margin-bottom: 80px;
+  }
+  .head .head-content .head-content-name .name {
+    margin-top: 100px;
+  }
+  .head .head-content .head-content-name .name h1 {
+    font-size: 36px;
+    width: 537px;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: #EB6329;
+    padding-left: 10px;
+    height: 100%;
+  }
+  .head .head-content .head-content-name {
+    grid-template-columns: 1fr;
+  }
+  .head .head-content .head-content-name img {
+    display: none;
+  }
+  .head .head-content .head-content-name p {
+    font-size: 18px;
+    width: 552px;
+    margin-bottom: 218px;
+  }
 }/*# sourceMappingURL=main4.css.map */

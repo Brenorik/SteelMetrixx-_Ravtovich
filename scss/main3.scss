@@ -195,7 +195,7 @@ table {
     margin-bottom: 424px;
 }
 
-// /*Section 2*/  @include onlylarge(1300px) {flex-wrap: wrap;}
+ /*Section 2*/  
 
 @mixin onlylarge($w)
 {
