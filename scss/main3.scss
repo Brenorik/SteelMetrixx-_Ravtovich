@@ -63,6 +63,10 @@ table {
 /*Section 1*/
 
 
+.container-first header .burger {
+    display: none;
+}
+
 .container-first{
     background-color: #FFF;
     height: 80px;
@@ -149,8 +153,10 @@ table {
 
 .head .head-content{
     background-image: url(../images/page3/fonhead.jpg);
+    background-size: cover;
     width: 100%;
-    height: 100%;
+    max-width: 100%;
+    background-position: center;
     margin-bottom: 100px;
     padding-top: 80px;
 }
@@ -189,12 +195,22 @@ table {
     margin-bottom: 424px;
 }
 
-/*Section 2*/
+// /*Section 2*/  @include onlylarge(1300px) {flex-wrap: wrap;}
+
+@mixin onlylarge($w)
+{
+    @media only screen and (max-width: $w)
+    {
+        @content;
+    }
+}
 
 .container-company{
     .container-content{
         .listgr{
+            
             .list-group{
+                @include onlylarge(1200px) {display: flex;flex-direction: row; justify-content: space-around;border-bottom: 1px solid #D8D8D8;}
                 a{
                     color: #ABABAB;
                     font-size: 20px;
@@ -203,9 +219,11 @@ table {
                     padding-bottom: 20px;
                     text-decoration: none;
                     width: 200px;
-                }
+                    @include onlylarge(1200px) { justify-content: space-between;font-size: 18px; width: auto; }
+                }   
                 a:hover{
                     color: #EB6329;
+                    @include onlylarge(1200px) {border-bottom: 1px solid #EB6329;padding-bottom: 1px;}
                 }
 
             }
@@ -219,6 +237,7 @@ table {
                 letter-spacing: 1.02px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                @include onlylarge(1200px){font-size: 30px; padding-top: 40px;}
             }
             .company{
                 color: #464646;
@@ -226,7 +245,7 @@ table {
                 font-weight: 500;
                 line-height: 130%; /* 28.6px */
                 margin-bottom: 50px;
-
+                @include onlylarge(1200px) {font-size: 18px;margin-bottom: 30px;}
             }
             .SteelMetriXX-info{
                 display: grid;
@@ -235,9 +254,16 @@ table {
                 row-gap: 50px;
                 justify-items: center;
                 align-items: center;
-                >img{
-                    height: 100%;
-                    width: 100%;
+                @include onlylarge(1200px) {grid-template-columns: 340px 340px;justify-content: center}
+                .projectdepartment,
+                .ownproduction,
+                .installation{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        @include onlylarge(1200px) {width: 340px;height: 452px; }
+                    }
                 }
                 h3{
                     color: #464646;
@@ -245,6 +271,7 @@ table {
                     font-weight: 600;
                     line-height: 130%; /* 36.4px */
                     margin-bottom: 20px;
+                    @include onlylarge(1200px) {font-size: 24px;margin-bottom: 15px}
                 }
                 p{
                     color: #464646;
@@ -252,6 +279,7 @@ table {
                     font-weight: 500;
                     line-height: 130%; /* 28.6px */
                     margin-bottom: 20px;
+                    @include onlylarge(1200px) {font-size: 18px;margin-bottom: 15px}
                 }
                 ul{
                     display: grid;
@@ -263,6 +291,11 @@ table {
                         font-weight: 500;
                         line-height: 130%; /* 28.6px */
                         margin-bottom: 20px;
+                        @include onlylarge(1200px) {font-size: 18px;margin-bottom: 10px}
+                    }
+                    img{
+                        width: 10px;
+                        height: 22px;
                     }
                 } 
             }
@@ -273,30 +306,35 @@ table {
                 line-height: 120%; /* 40.8px */
                 margin-top: 150px;
                 margin-bottom: 150px;
+                @include onlylarge(1200px){font-size: 30px;margin-top: 130px; margin-bottom: 130px; text-align: center;}
             }
         }
         .successes{
             img{
                 margin-bottom: 50px;
                 margin-left: -635px;
+                @include onlylarge(1200px){margin-left: -200px;}
             }
             .successes-info{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 40px;
                 row-gap: 40px;
+                @include onlylarge(1200px){grid-template-columns: 1fr 1fr;column-gap: 119px;}
                 h3{
                     color: #EB6329;
                     font-size: 34px;
                     font-weight: 700;
                     line-height: 120%; /* 40.8px */
                     margin-bottom: 5px;
+                    @include onlylarge(1200px){font-size: 30px;}
                 }
                 p{
                     color:#464646;
                     font-size: 22px;
                     font-weight: 500;
                     line-height: 130%; /* 28.6px */
+                    @include onlylarge(1200px){font-size: 18px;}
                 }
             }
             h2{
@@ -308,6 +346,7 @@ table {
                 text-transform: uppercase;
                 margin-top: 100px;
                 margin-bottom: 20px;
+                @include onlylarge(1200px){font-size: 24px;margin-top: 80px;margin-bottom: 30px;}
             }
             .effective-info{
                 border-top: solid 1px #D8D8D8;
@@ -320,12 +359,14 @@ table {
                     font-weight: 700;
                     line-height: 130%; /* 28.6px */
                     margin-bottom: 10px;
+                    @include onlylarge(1200px){font-size: 18px;}
                 }
                 p{
                     color:  #464646;
                     font-size: 22px;
                     font-weight: 400;
                     line-height: 130%; /* 28.6px */
+                    @include onlylarge(1200px){font-size: 18px;}
                 }
             }
         }
@@ -333,7 +374,8 @@ table {
             >img{
                 margin-top: 100px;
                 margin-bottom: 50px;
-                margin-left: -635px; 
+                margin-left: -635px;
+                @include onlylarge(1200px){margin-left: -200px; margin-top: 80px; margin-bottom: 40px;} 
             }
             .solutions-cart{
                 display: grid;
@@ -341,6 +383,7 @@ table {
                 column-gap: 40px;
                 row-gap: 40px;
                 margin-bottom: 150px;
+                @include onlylarge(1200px){grid-template-columns: 1fr 1fr;row-gap: 30px;margin-bottom: 50px;}
                 .cart-info{
                     background: #464646;
                     img{
@@ -357,6 +400,7 @@ table {
                         margin-bottom: 60px;
                         width: 259px;
                         margin-left: 20px;
+                        @include onlylarge(1200px){font-size: 20px;margin-top: 20px;margin-bottom: 30px;width: 300px;}
                     }
                     p{
                         color: #FFF;
@@ -366,6 +410,7 @@ table {
                         margin-left: 20px;
                         margin-bottom: 25px;
                         width: 225px; 
+                        @include onlylarge(1200px){font-size: 15px;width: 265px; }
                     }
                     .editing-one{
                         margin-bottom: 35px;
@@ -375,9 +420,28 @@ table {
                     }
 
                 }
+                .cardclose{
+                    @include onlylarge(1200px){display: none;}
+                }
+
+            }
+            .arrow{
+                display: none;
+                @include onlylarge(1200px){display: block; text-align: center;padding-bottom: 100px;}
+                a{
+                    color: #464646;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 100%; /* 18px */
+                    text-decoration: none;
+                }
+                img{
+                    padding-left: 10px;
+                }
             }
         }
         .geography{
+            @include onlylarge(1200px){text-align: center;}
             h2{
                 color: #EB6329;
                 font-size: 34px;
@@ -387,25 +451,29 @@ table {
                 text-transform: uppercase;
                 margin-left: -335px;
                 margin-bottom: 20px;
+                @include onlylarge(1200px){font-size: 30px;margin-left: 0;text-align: start;}
             }
             img{
                 margin-left: -335px;
                 margin-bottom: 100px;
+                @include onlylarge(1336px) {width: 1100px;height: 668px;object-fit: cover;}
+                @include onlylarge(1200px) {width: 720px;height: 438px;margin-left: 0;}
 
             }
             .region{
                 background:#D8D8D8;
                 padding-top: 150px;
                 padding-bottom: 150px;
-                max-width: 1920px;
-                margin-left: -635px;
-                margin-right: -302px;
+                width: 135%;
+                margin-left: -35%;
+                @include onlylarge(1200px) {width: 100% ;margin: 0 auto; padding-top: 130px; padding-bottom: 130px;}
                 h3{
                     color: #464646;
                     text-align: center;
                     font-size: 34px;
                     font-weight: 700;
                     line-height: 130%; /* 44.2px */
+                    @include onlylarge(1200px){font-size: 30px;}
                 }
                 p{
                     color: #464646;
@@ -415,6 +483,7 @@ table {
                     padding-bottom: 50px;
                     padding-top: 20px;
                     text-align: center;
+                    @include onlylarge(1200px){font-size: 18px;}
                 }
                 .region-button{
                     display: flex;
@@ -514,7 +583,8 @@ table {
             img{
                 margin-top: 100px;
                 margin-left: -635px;
-                margin-bottom: 50px; 
+                margin-bottom: 50px;
+                @include onlylarge(1200px){margin-left: -200px; margin-top: 80px; margin-bottom: 40px;}  
 
             }
             .history-blok{
@@ -527,6 +597,8 @@ table {
                     grid-template-columns: 73px 1fr 186px 1fr;
                     column-gap: 40px;
                     row-gap: 30px;
+                    @include onlylarge(1200px){ grid-template-columns: 246px 1fr 251px;padding-top: 30px; padding-bottom: 30px;}
+
                     h3{
                         color: #EB6329;
                         font-size: 31px;
@@ -534,17 +606,19 @@ table {
                         letter-spacing: 0.31px;
                         grid-column: 1;
                         grid-row: 1/3;
+                        @include onlylarge(1200px){grid-column: 1/4;grid-row: 1;font-size: 28px;}
                     }
                     p{
                         color: #464646;
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 130%; /* 23.4px */
+                        @include onlylarge(1200px){font-size: 16px;}
                     }
                     .blok2016{
                         grid-column: 2/5;
                         grid-row: 1;
-
+                        @include onlylarge(1200px){grid-column: 1/4;grid-row: 2;}
                     }
                 }
                 .year2017_18_19_20_23{
@@ -555,17 +629,21 @@ table {
                     display: grid;
                     grid-template-columns: 73px 1fr 186px 1fr;
                     column-gap: 40px;
+                    @include onlylarge(1200px){ grid-template-columns: 246px 1fr 251px;padding-top: 30px; padding-bottom: 30px;row-gap: 20px;}
+
                     h3{
                         color: #464646;
                         font-size: 31px;
                         font-weight: 700;
                         letter-spacing: 0.31px;
+                        @include onlylarge(1200px){grid-column: 1/4;grid-row: 1;font-size: 28px;}
                     }
                     p{
                         color: #464646;
                         font-size: 18px;
                         font-weight: 500;
                         line-height: 130%; /* 23.4px */
+                        @include onlylarge(1200px){font-size: 16px;}
                     }
                 }
             }
@@ -575,6 +653,8 @@ table {
                 margin-top: 100px;
                 margin-left: -635px;
                 margin-bottom: 50px; 
+                @include onlylarge(1200px){margin-left: -200px; margin-top: 80px; margin-bottom: 40px;} 
+
             }
             .team-member{
                 display: grid;
@@ -582,6 +662,7 @@ table {
                 column-gap: 40px;
                 row-gap: 40px;
                 padding-bottom: 100px;
+                @include onlylarge(1200px){grid-template-columns: 1fr 1fr; text-align: center;padding-bottom: 80px;}
                 .team-info{
                     color:  #464646;
 
@@ -610,6 +691,7 @@ table {
 .container-contacts{
     background:#464646;
     padding: 150px;
+    @include onlylarge(1336px) {padding: 130px 116px;}
     .contacts-info{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -637,6 +719,7 @@ table {
         .contacts-right{
             background-color: #FFF;
             padding: 60px;
+            @include onlylarge(1336px) {width: 110%;}
         }
     }
 
@@ -801,4 +884,122 @@ table {
     line-height: 100%; /* 16px */
     padding-top: 70px;
     text-align: end;
+}
+
+@media screen and (max-width: 1336px){
+    .center{
+        width: calc(100% - 90px);
+    }
+
+    .container-first header .burger{
+        display: block;
+        height: 20px;
+    }
+
+    .container-first header .burger i{
+        display: block;
+        width: 30px;
+        margin: 3px 0;
+        height: 3px;
+        background: #464646;
+    }
+    .container-first header .menu{
+        /* display: none; */
+        left: -100%;
+        /* opacity: 0; */
+        min-height: 100vh;
+        background: #FFF;
+        position: fixed;
+        top: 0;
+        /* left: 0; */
+        width: 85%;
+        z-index: 1;
+        transition: 1s;
+        min-width: 270px;
+        color: #fff;
+        margin-top: 80px;
+        
+    }
+
+    .container-first header .menu.menu-show{
+        left: 0;
+        margin-top: 80px;
+    }
+
+    .container-first header .menu .btn-menu {
+        align-items: flex-start;
+        padding-left: 57px;
+        padding-top: 30px;
+        
+    }
+
+    .container-first header .menu .btn-menu li{
+        border-bottom: 1px  solid #D8D8D8;
+        padding-bottom: 30px;
+        width: 95%;
+        margin-top: 0;
+    }
+
+    .container-first header .menu ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container-first header .menu ul img{
+        display: none;
+    }
+
+    .container-first header .menu ul li,
+    .container-first header .menu ul li.contact-btn{
+        margin-left: 0;
+        margin-right: 0;
+        margin: 30px 0;
+    }
+
+    .container-first header .menu .btn-menu .dropdown .dropdown-menu{
+        display: contents;
+    }
+
+    .container-first header .menu .btn-menu .dropdown .dropdown-menu .one{
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+
+    .container-first header .menu .btn-menu .dropdown{
+        border: none;
+        margin-bottom: -30px;
+    }
+
+    .form-floating>label {
+        z-index: 0;
+    }      
+}
+
+@media screen and (max-width: 1200px){
+    .head .head-content .head-content-name p{
+        margin-bottom: 233px;
+        font-size: 18px;
+        width: 720px;
+    }
+
+    .head .head-content .head-content-name .name h1{
+        font-size: 36px;
+        width: 705px;
+        border-left-style: solid;
+        border-width: 5px;
+        border-color: #EB6329;
+        padding-left: 10px;
+        height: 100%;
+    }
+
+    .head .head-content .head-content-name{
+        grid-template-columns: 1fr;
+    }
+    .head .head-content .head-content-name img{
+        display: none;
+    }
+
 }

@@ -1431,10 +1431,4 @@ table {
     .container-projects .projects-bottom .projects-questions h3 {
         width: 340px;
     }
-
-    .container-first header .menu .btn-menu .dropdown .btn,
-    .container-first header .menu ul li a,
-    .container-first header .tel {
-        font-size: 14px;
-    }
 }

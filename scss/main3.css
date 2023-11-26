@@ -66,6 +66,10 @@ table {
 }
 
 /*Section 1*/
+.container-first header .burger {
+  display: none;
+}
+
 .container-first {
   background-color: #FFF;
   height: 80px;
@@ -154,8 +158,10 @@ table {
 
 .head .head-content {
   background-image: url(../images/page3/fonhead.jpg);
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  max-width: 100%;
+  background-position: center;
   margin-bottom: 100px;
   padding-top: 80px;
 }
@@ -193,7 +199,14 @@ table {
   margin-bottom: 424px;
 }
 
-/*Section 2*/
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .listgr .list-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #D8D8D8;
+  }
+}
 .container-company .container-content .listgr .list-group a {
   color: #ABABAB;
   font-size: 20px;
@@ -203,8 +216,21 @@ table {
   text-decoration: none;
   width: 200px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .listgr .list-group a {
+    justify-content: space-between;
+    font-size: 18px;
+    width: auto;
+  }
+}
 .container-company .container-content .listgr .list-group a:hover {
   color: #EB6329;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .listgr .list-group a:hover {
+    border-bottom: 1px solid #EB6329;
+    padding-bottom: 1px;
+  }
 }
 .container-company .container-content .SteelMetriXX h2 {
   color: #EB6329;
@@ -215,12 +241,24 @@ table {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX h2 {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+}
 .container-company .container-content .SteelMetriXX .company {
   color: #464646;
   font-size: 22px;
   font-weight: 500;
   line-height: 130%; /* 28.6px */
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX .company {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 }
 .container-company .container-content .SteelMetriXX .SteelMetriXX-info {
   display: grid;
@@ -231,9 +269,27 @@ table {
   justify-items: center;
   align-items: center;
 }
-.container-company .container-content .SteelMetriXX .SteelMetriXX-info > img {
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info {
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+  }
+}
+.container-company .container-content .SteelMetriXX .SteelMetriXX-info .projectdepartment img,
+.container-company .container-content .SteelMetriXX .SteelMetriXX-info .ownproduction img,
+.container-company .container-content .SteelMetriXX .SteelMetriXX-info .installation img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info .projectdepartment img,
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info .ownproduction img,
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info .installation img {
+    width: 340px;
+    height: 452px;
+  }
 }
 .container-company .container-content .SteelMetriXX .SteelMetriXX-info h3 {
   color: #464646;
@@ -242,12 +298,24 @@ table {
   line-height: 130%; /* 36.4px */
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
 .container-company .container-content .SteelMetriXX .SteelMetriXX-info p {
   color: #464646;
   font-size: 22px;
   font-weight: 500;
   line-height: 130%; /* 28.6px */
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 }
 .container-company .container-content .SteelMetriXX .SteelMetriXX-info ul {
   display: grid;
@@ -260,6 +328,16 @@ table {
   line-height: 130%; /* 28.6px */
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX .SteelMetriXX-info ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+.container-company .container-content .SteelMetriXX .SteelMetriXX-info ul img {
+  width: 10px;
+  height: 22px;
+}
 .container-company .container-content .SteelMetriXX > h3 {
   color: #EB6329;
   font-size: 34px;
@@ -268,9 +346,22 @@ table {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .SteelMetriXX > h3 {
+    font-size: 30px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    text-align: center;
+  }
+}
 .container-company .container-content .successes img {
   margin-bottom: 50px;
   margin-left: -635px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes img {
+    margin-left: -200px;
+  }
 }
 .container-company .container-content .successes .successes-info {
   display: grid;
@@ -279,6 +370,13 @@ table {
        column-gap: 40px;
   row-gap: 40px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes .successes-info {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 119px;
+         column-gap: 119px;
+  }
+}
 .container-company .container-content .successes .successes-info h3 {
   color: #EB6329;
   font-size: 34px;
@@ -286,11 +384,21 @@ table {
   line-height: 120%; /* 40.8px */
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes .successes-info h3 {
+    font-size: 30px;
+  }
+}
 .container-company .container-content .successes .successes-info p {
   color: #464646;
   font-size: 22px;
   font-weight: 500;
   line-height: 130%; /* 28.6px */
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes .successes-info p {
+    font-size: 18px;
+  }
 }
 .container-company .container-content .successes h2 {
   color: #EB6329;
@@ -301,6 +409,13 @@ table {
   text-transform: uppercase;
   margin-top: 100px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes h2 {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
 }
 .container-company .container-content .successes .effective-info {
   border-top: solid 1px #D8D8D8;
@@ -315,16 +430,33 @@ table {
   line-height: 130%; /* 28.6px */
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes .effective-info h4 {
+    font-size: 18px;
+  }
+}
 .container-company .container-content .successes .effective-info p {
   color: #464646;
   font-size: 22px;
   font-weight: 400;
   line-height: 130%; /* 28.6px */
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .successes .effective-info p {
+    font-size: 18px;
+  }
+}
 .container-company .container-content .industries > img {
   margin-top: 100px;
   margin-bottom: 50px;
   margin-left: -635px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .industries > img {
+    margin-left: -200px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
 }
 .container-company .container-content .industries .solutions-cart {
   display: grid;
@@ -333,6 +465,13 @@ table {
        column-gap: 40px;
   row-gap: 40px;
   margin-bottom: 150px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .industries .solutions-cart {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
 }
 .container-company .container-content .industries .solutions-cart .cart-info {
   background: #464646;
@@ -352,6 +491,14 @@ table {
   width: 259px;
   margin-left: 20px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .industries .solutions-cart .cart-info h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+}
 .container-company .container-content .industries .solutions-cart .cart-info p {
   color: #FFF;
   font-size: 18px;
@@ -361,11 +508,47 @@ table {
   margin-bottom: 25px;
   width: 225px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .industries .solutions-cart .cart-info p {
+    font-size: 15px;
+    width: 265px;
+  }
+}
 .container-company .container-content .industries .solutions-cart .cart-info .editing-one {
   margin-bottom: 35px;
 }
 .container-company .container-content .industries .solutions-cart .cart-info .editing-two {
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .industries .solutions-cart .cardclose {
+    display: none;
+  }
+}
+.container-company .container-content .industries .arrow {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .industries .arrow {
+    display: block;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+}
+.container-company .container-content .industries .arrow a {
+  color: #464646;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%; /* 18px */
+  text-decoration: none;
+}
+.container-company .container-content .industries .arrow img {
+  padding-left: 10px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .geography {
+    text-align: center;
+  }
 }
 .container-company .container-content .geography h2 {
   color: #EB6329;
@@ -377,17 +560,46 @@ table {
   margin-left: -335px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .geography h2 {
+    font-size: 30px;
+    margin-left: 0;
+    text-align: start;
+  }
+}
 .container-company .container-content .geography img {
   margin-left: -335px;
   margin-bottom: 100px;
+}
+@media only screen and (max-width: 1336px) {
+  .container-company .container-content .geography img {
+    width: 1100px;
+    height: 668px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .geography img {
+    width: 720px;
+    height: 438px;
+    margin-left: 0;
+  }
 }
 .container-company .container-content .geography .region {
   background: #D8D8D8;
   padding-top: 150px;
   padding-bottom: 150px;
-  max-width: 1920px;
-  margin-left: -635px;
-  margin-right: -302px;
+  width: 135%;
+  margin-left: -35%;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .geography .region {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 .container-company .container-content .geography .region h3 {
   color: #464646;
@@ -395,6 +607,11 @@ table {
   font-size: 34px;
   font-weight: 700;
   line-height: 130%; /* 44.2px */
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .geography .region h3 {
+    font-size: 30px;
+  }
 }
 .container-company .container-content .geography .region p {
   color: #464646;
@@ -404,6 +621,11 @@ table {
   padding-bottom: 50px;
   padding-top: 20px;
   text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .geography .region p {
+    font-size: 18px;
+  }
 }
 .container-company .container-content .geography .region .region-button {
   display: flex;
@@ -489,6 +711,13 @@ table {
   margin-left: -635px;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history img {
+    margin-left: -200px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}
 .container-company .container-content .history .history-blok .year2016_21_22 {
   border-top: solid 1px #D8D8D8;
   border-bottom: solid 1px #D8D8D8;
@@ -500,6 +729,13 @@ table {
        column-gap: 40px;
   row-gap: 30px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2016_21_22 {
+    grid-template-columns: 246px 1fr 251px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .container-company .container-content .history .history-blok .year2016_21_22 h3 {
   color: #EB6329;
   font-size: 31px;
@@ -508,15 +744,33 @@ table {
   grid-column: 1;
   grid-row: 1/3;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2016_21_22 h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-size: 28px;
+  }
+}
 .container-company .container-content .history .history-blok .year2016_21_22 p {
   color: #464646;
   font-size: 18px;
   font-weight: 500;
   line-height: 130%; /* 23.4px */
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2016_21_22 p {
+    font-size: 16px;
+  }
+}
 .container-company .container-content .history .history-blok .year2016_21_22 .blok2016 {
   grid-column: 2/5;
   grid-row: 1;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2016_21_22 .blok2016 {
+    grid-column: 1/4;
+    grid-row: 2;
+  }
 }
 .container-company .container-content .history .history-blok .year2017_18_19_20_23 {
   border-top: solid 1px #D8D8D8;
@@ -528,11 +782,26 @@ table {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2017_18_19_20_23 {
+    grid-template-columns: 246px 1fr 251px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    row-gap: 20px;
+  }
+}
 .container-company .container-content .history .history-blok .year2017_18_19_20_23 h3 {
   color: #464646;
   font-size: 31px;
   font-weight: 700;
   letter-spacing: 0.31px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2017_18_19_20_23 h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-size: 28px;
+  }
 }
 .container-company .container-content .history .history-blok .year2017_18_19_20_23 p {
   color: #464646;
@@ -540,10 +809,22 @@ table {
   font-weight: 500;
   line-height: 130%; /* 23.4px */
 }
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .history .history-blok .year2017_18_19_20_23 p {
+    font-size: 16px;
+  }
+}
 .container-company .container-content .team > img {
   margin-top: 100px;
   margin-left: -635px;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .team > img {
+    margin-left: -200px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
 }
 .container-company .container-content .team .team-member {
   display: grid;
@@ -552,6 +833,13 @@ table {
        column-gap: 40px;
   row-gap: 40px;
   padding-bottom: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .container-company .container-content .team .team-member {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding-bottom: 80px;
+  }
 }
 .container-company .container-content .team .team-member .team-info {
   color: #464646;
@@ -573,6 +861,11 @@ table {
 .container-contacts {
   background: #464646;
   padding: 150px;
+}
+@media only screen and (max-width: 1336px) {
+  .container-contacts {
+    padding: 130px 116px;
+  }
 }
 .container-contacts .contacts-info {
   display: grid;
@@ -600,6 +893,11 @@ table {
 .container-contacts .contacts-info .contacts-right {
   background-color: #FFF;
   padding: 60px;
+}
+@media only screen and (max-width: 1336px) {
+  .container-contacts .contacts-info .contacts-right {
+    width: 110%;
+  }
 }
 
 .container-contacts .contacts-info .contacts-right input,
@@ -752,4 +1050,104 @@ table {
   line-height: 100%; /* 16px */
   padding-top: 70px;
   text-align: end;
+}
+
+@media screen and (max-width: 1336px) {
+  .center {
+    width: calc(100% - 90px);
+  }
+  .container-first header .burger {
+    display: block;
+    height: 20px;
+  }
+  .container-first header .burger i {
+    display: block;
+    width: 30px;
+    margin: 3px 0;
+    height: 3px;
+    background: #464646;
+  }
+  .container-first header .menu {
+    /* display: none; */
+    left: -100%;
+    /* opacity: 0; */
+    min-height: 100vh;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 85%;
+    z-index: 1;
+    transition: 1s;
+    min-width: 270px;
+    color: #fff;
+    margin-top: 80px;
+  }
+  .container-first header .menu.menu-show {
+    left: 0;
+    margin-top: 80px;
+  }
+  .container-first header .menu .btn-menu {
+    align-items: flex-start;
+    padding-left: 57px;
+    padding-top: 30px;
+  }
+  .container-first header .menu .btn-menu li {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 30px;
+    width: 95%;
+    margin-top: 0;
+  }
+  .container-first header .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .container-first header .menu ul img {
+    display: none;
+  }
+  .container-first header .menu ul li,
+  .container-first header .menu ul li.contact-btn {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 30px 0;
+  }
+  .container-first header .menu .btn-menu .dropdown .dropdown-menu {
+    display: contents;
+  }
+  .container-first header .menu .btn-menu .dropdown .dropdown-menu .one {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .container-first header .menu .btn-menu .dropdown {
+    border: none;
+    margin-bottom: -30px;
+  }
+  .form-floating > label {
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .head .head-content .head-content-name p {
+    margin-bottom: 233px;
+    font-size: 18px;
+    width: 720px;
+  }
+  .head .head-content .head-content-name .name h1 {
+    font-size: 36px;
+    width: 705px;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: #EB6329;
+    padding-left: 10px;
+    height: 100%;
+  }
+  .head .head-content .head-content-name {
+    grid-template-columns: 1fr;
+  }
+  .head .head-content .head-content-name img {
+    display: none;
+  }
 }/*# sourceMappingURL=main3.css.map */
