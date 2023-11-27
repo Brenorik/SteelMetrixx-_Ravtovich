@@ -82,14 +82,24 @@ table {
     font-family: 'Gilroy';
     margin-top: 14px;
     margin-bottom: 14px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 506px 197px;
     grid-template-columns: 1fr 506px 197px;
 }
 .container-first header .menu .btn-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container-first header .menu .btn-menu .dropdown .btn{
@@ -146,8 +156,12 @@ table {
 
 .container-first header .tel a{
     color: #EB6329;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     text-decoration: none;
 }
 
@@ -511,7 +525,9 @@ table {
 .container-footer .footer-info{
     padding-top: 50px;
     padding-bottom: 50px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 453px 295px;
     grid-template-columns: 1fr 453px 295px;
 
 }
@@ -521,10 +537,14 @@ table {
 }
 
 .container-footer .footer-info .footer-logo .footer-left{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 30px 1fr;
     grid-template-columns: 30px 1fr;
     padding-top: 20px;
-    align-items: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 
 }
 
@@ -588,10 +608,14 @@ table {
 }
 
 .container-footer .footer-info .footer-right .right-info{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 30px 1fr;
     grid-template-columns: 30px 1fr;
     padding-bottom: 20px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container-footer .footer-info .footer-right .right-info a:hover{
@@ -599,9 +623,13 @@ table {
 }
 
 .container-footer .footer-info .footer-right .right-address{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 30px 1fr;
     grid-template-columns: 30px 1fr;
-    align-items: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
 }
 
 .container-footer .footer-info .footer-right .right-info .email{
@@ -609,7 +637,8 @@ table {
     font-size: 18px;
     font-weight: 500;
     line-height: 100%; /* 18px */
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     text-transform: lowercase;
 
 }

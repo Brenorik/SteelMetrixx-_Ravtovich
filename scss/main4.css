@@ -319,7 +319,7 @@ table {
   border-bottom: solid 1px #D8D8D8;
   align-items: end;
 }
-.technological-equipment .container ul .col-6 {
+.technological-equipment .container ul .col-xl-6 {
   width: 49%;
 }
 .technological-equipment .container ul li a {
@@ -445,7 +445,7 @@ table {
 .container-production .container ul {
   border-bottom: solid 1px #D8D8D8;
 }
-.container-production .container ul .col-6 {
+.container-production .container ul .col-xl-6 {
   width: 49%;
 }
 .container-production .container ul li a {
@@ -1297,6 +1297,11 @@ table {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 425px) {
+  .standards .standards-info .btn {
+    width: 320px;
+  }
+}
 
 /*Section 11*/
 .container-footer {
@@ -1626,5 +1631,8 @@ table {
   }
   .container-footer .footer-info .footer-right .footer-bootom {
     margin-top: 150px;
+  }
+  .container-help .projects-bottom .projects-button .modal .modal-dialog .modal-content .modal-body .contacts-right input, .container-help .projects-bottom .projects-button .modal .modal-dialog .modal-content .modal-body .contacts-right select, .container-help .projects-bottom .projects-button .modal .modal-dialog .modal-content .modal-body .contacts-right .form-floating {
+    width: 100%;
   }
 }/*# sourceMappingURL=main4.css.map */

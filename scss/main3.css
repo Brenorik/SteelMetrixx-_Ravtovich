@@ -1469,4 +1469,7 @@ table {
   .head .head-content .head-content-name .name h1 {
     font-size: 22px;
   }
+  .container-company .container-content .geography .region .region-button .modal .modal-dialog .modal-content .modal-body .contacts-right input, .container-company .container-content .geography .region .region-button .modal .modal-dialog .modal-content .modal-body .contacts-right select, .container-company .container-content .geography .region .region-button .modal .modal-dialog .modal-content .modal-body .contacts-right .form-floating {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main3.css.map */
