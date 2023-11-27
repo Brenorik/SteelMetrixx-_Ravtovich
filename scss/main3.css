@@ -1052,6 +1052,11 @@ table {
     font-size: 30px;
   }
 }
+@media only screen and (max-width: 800px) {
+  .container-contacts .contacts-info .contacts-left h3 {
+    font-size: 24px;
+  }
+}
 .container-contacts .contacts-info .contacts-left p {
   color: #FFF;
   font-size: 22px;
@@ -1089,6 +1094,11 @@ table {
   .container-contacts .contacts-info .contacts-right {
     width: 100%;
     height: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-contacts .contacts-info .contacts-right {
+    padding: 15px;
   }
 }
 .container-contacts .contacts-info .btn-dark {
