@@ -145,10 +145,11 @@ table {
     vertical-align: bottom;
 }
 
-.container-first header .tel{
+.container-first header .tel a{
     color: #EB6329;
     display: flex;
     justify-content: flex-end;
+    text-decoration: none;
 }
 
 .head{
@@ -1100,7 +1101,6 @@ table {
     .container-first header .menu .btn-menu {
         align-items: flex-start;
         padding-left: 57px;
-        padding-top: 30px;
         
     }
 
@@ -1108,7 +1108,6 @@ table {
         border-bottom: 1px  solid #D8D8D8;
         padding-bottom: 30px;
         width: 95%;
-        margin-top: 0;
     }
 
     .container-first header .menu ul{

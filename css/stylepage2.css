@@ -140,10 +140,11 @@ table {
     vertical-align: bottom;
 }
 
-.container-first header .tel{
+.container-first header .tel a{
     color: #EB6329;
     display: flex;
     justify-content: flex-end;
+    text-decoration: none;
 }
 
 /*Section 2*/
@@ -314,7 +315,7 @@ table {
     margin-bottom: 30px;
 }
 
-.container-address .address-name img{
+.container-address .address-name .address-map{
     width: 1316px;
     height: 639px;
     margin-bottom: 30px;
@@ -523,7 +524,6 @@ table {
     .container-first header .menu .btn-menu {
         align-items: flex-start;
         padding-left: 57px;
-        padding-top: 30px;
         
     }
 
@@ -531,7 +531,6 @@ table {
         border-bottom: 1px  solid #D8D8D8;
         padding-bottom: 30px;
         width: 95%;
-        margin-top: 0;
     }
 
     .container-first header .menu ul{
@@ -571,7 +570,7 @@ table {
         z-index: 0;
     }
 
-    .container-address .address-name img{
+    .container-address .address-name .address-map{
         width: 100%;
     }
 
@@ -637,7 +636,7 @@ table {
     .container-footer .footer-info .footer-logo .footer-policy{
         margin-top: 200px;
     }
-    .container-address .address-name img{
+    .container-address .address-name .address-map{
         height: 550px;
     }
 }
@@ -656,7 +655,7 @@ table {
         width: 90%;
     }
     
-    .container-address .address-name img {
+    .container-address .address-name .address-map {
         height: 407px;
     }
 
@@ -704,7 +703,7 @@ table {
         font-size: 18px;
     }
 
-    .container-address .address-name img {
+    .container-address .address-name .address-map{
         width: 100%;
         height: 192px;
         object-fit: cover;

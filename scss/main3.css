@@ -150,10 +150,11 @@ table {
   vertical-align: bottom;
 }
 
-.container-first header .tel {
+.container-first header .tel a {
   color: #EB6329;
   display: flex;
   justify-content: flex-end;
+  text-decoration: none;
 }
 
 .head .head-content {
@@ -540,7 +541,7 @@ table {
 @media only screen and (max-width: 825px) {
   .container-company .container-content .industries .solutions-cart {
     grid-template-columns: 1fr;
-    width: 340px;
+    width: 335px;
   }
 }
 .container-company .container-content .industries .solutions-cart .cart-info {
@@ -1306,13 +1307,11 @@ table {
   .container-first header .menu .btn-menu {
     align-items: flex-start;
     padding-left: 57px;
-    padding-top: 30px;
   }
   .container-first header .menu .btn-menu li {
     border-bottom: 1px solid #D8D8D8;
     padding-bottom: 30px;
     width: 95%;
-    margin-top: 0;
   }
   .container-first header .menu ul {
     display: flex;
@@ -1464,5 +1463,10 @@ table {
   }
   .container-footer .footer-info .footer-right .footer-bootom {
     margin-top: 150px;
+  }
+}
+@media screen and (max-width: 825px) {
+  .head .head-content .head-content-name .name h1 {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=main3.css.map */
