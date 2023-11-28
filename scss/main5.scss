@@ -62,6 +62,10 @@ table {
 
 /*Section 1*/
 
+.container-first header .burger {
+    display: none;
+}
+
 .container-first{
     background-color: #FFF;
     height: 80px;
@@ -71,10 +75,6 @@ table {
     left: 0;
     width: 100%;
     z-index: 2;
-}
-
-.container-first header .burger {
-    display: none;
 }
 
 .container-first header{
@@ -88,8 +88,9 @@ table {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 506px 197px;
-    grid-template-columns: 1fr 506px 197px;
+    grid-template-columns: 1fr 545px 197px;
 }
+
 .container-first header .menu .btn-menu{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,8 +109,9 @@ table {
     font-weight: 500;
     line-height: 100%; /* 18px */
     text-decoration: none;
-    padding: 0;
+    padding: 0 15px;
 }
+
 .container-first header .menu .btn-menu .dropdown .btn img{
     padding-left: 8px;
 }
@@ -118,13 +120,9 @@ table {
     color: #EB6329;
 }
 
-.container-first header .menu .btn-menu .dropdown .line{
-    margin-left: 8px;
-    vertical-align: bottom;
-}
-
 .container-first header .menu .btn-menu .dropdown .dropdown-menu{
     padding: 20px;
+    --bs-dropdown-link-active-bg: #FFF;
 }
 
 .container-first header .menu .btn-menu .dropdown .dropdown-menu .one{
@@ -146,13 +144,25 @@ table {
     
 }
 
+.container-first header .menu ul .linerighthead{
+    border-right: solid 1px #D9D9D9;
+    padding-right: 20px;
+}
+
+.container-first header .menu ul .linelefthead{
+    border-left: solid 1px #D9D9D9;
+    padding-left: 20px;
+}
+
+.container-first header .menu ul .linenone{
+    padding-left: 20px;
+}
+
+
 .container-first header .menu ul li a:hover{
     color: #EB6329;
 }
-.container-first header .menu ul li a img{
-    margin-left: 8px;
-    vertical-align: bottom;
-}
+
 
 .container-first header .tel a{
     color: #EB6329;
@@ -234,10 +244,9 @@ table {
                 border: 1.5px solid #464646;
                 margin-bottom: 20px;
                 margin-right: 20px;
-                @include onlylarge(800px){font-size: 16px;}
+                @include onlylarge(800px){font-size: 16px; padding: 11px 16px; margin-bottom: 10px; margin-right: 10px;}
 
             }
-
         }
         .arrow{
             padding-top: 20px;
@@ -714,6 +723,8 @@ table {
         border-bottom: 1px  solid #D8D8D8;
         padding-bottom: 30px;
         width: 95%;
+        border-left: none;
+        border-right: none;
     }
 
     .container-first header .menu ul{
